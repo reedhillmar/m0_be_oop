@@ -28,6 +28,25 @@ unicorn2.say
 #  it should have a thirsty attribute, that is true by default
 #  it should have a drink method. When called, the thirsty attribute changes to false
 
+class Vampire
+    def initialize(name, pet = "bat")
+        @name = name
+        @thirsty = true
+        @pet = pet
+    end
+
+    def drink
+        @thirsty = false
+    end
+end
+
+vamp1 = Vampire.new("Fenton")
+p vamp1
+vamp1.drink
+p vamp1
+
+vamp2 = Vampire.new("Count Chocula", "Procupine")
+p vamp2
 
 #  Write a Dragon class
 #  it should have a dynamic name attribute (string)
